@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">    <!-- Основной язык страницы -->
+<head>
+    <meta charset="UTF-8">      <!-- Установка кодировки символов текста веб-страницы -->
+    <title>Веб-разработка</title>       <!-- Заголовок страницы -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico"> <!-- Установка фавикона -->
+</head>
+<body>
+    <header>    <!-- Шапка страницы -->
+        <div>
+            <img src="img/logo.png" width="32" height="32" align="left" hspace="30" alt="Логотип">      <!-- Размещение логотипа в верхнем левом углу экрана с небольшим отступом вправо -->
+            <p style="text-align: right; margin-bottom: 0; line-height: 2">Группа: ЭФБО-09-23<br><!-- переход на новую строку -->Ключников Артём Дмитриевич</p>
+            <!-- здесь и дальше: параграф <p> с изменёнными параметрами margin (расстоянием вокруг элемента) -->
+            <p style="margin-left: 30px; margin-top: -20px">Logo</p>
+        </div>
+        <hr>   <!-- Здесь и дальше: горизонтальная линия -->
+        <nav style="margin-left: 30px">    <!-- Перечень основных невигационных ссылок (технически работает лишь одна)--> 
+            <a href="index.html" style="margin-right: 20px;">Главная</a>    <!-- Ссылка на главную страницу (первый макет) -->
+            <a style="margin-right: 20px;">Второй макет</a>
+            <a style="margin-right: 20px;">Первый семестр</a>
+            <a style="margin-right: 20px;">Второй семестр</a>
+            <a style="margin-right: 20px;">Услуги</a>
+            <a>Авторизация</a>
+        </nav>
+        <hr>
+    </header>
+    <table align="center" style="width: 100%">  <!-- Таблица, выравненная по ширине экрана. Требуется для добавления вертикальной черты на страницу  -->
+        <tr>
+            <td style="vertical-align: top; width: 10%">
+                <h5 >Навигация по странице</h5>  <!-- Загловок навигационного блока -->
+                <aside>     <!-- Боковая панель с якорными ссылками -->
+                    <a href="index.html#frontend">Фронтенд</a>     <!-- Якорная ссылка на абзац с фронтендом (расположен на главной странице) -->
+                    <br>
+                    <a href="index.html#backend">Бэкенд</a>       <!-- Якорная ссылка на абзац с бэкендом (расположен на главной странице) -->
+                </aside>
+            </td>
+            <td style="border-right: 1px solid black; height: 100px;"></td> <!-- Вертикальная линия -->
+            <td>
+                <main style="margin-left: 20px;">  <!-- Основное содержимое страницы с небольшим отступом вправо -->
+                    <h2>Разработка веб-приложений</h2>
+                    <style>
+                        .image-container {
+                            display: inline-block;
+                            text-align: center;
+                            margin-right: -10px;
+                            margin-left: -40px;
+                        }
+                    </style>
+                    <div class="image-container">   <!-- Класс ".image-container" позволяет отображать картинки в одну строку и корректирует их положение на странице -->
+                        <img src="img/empty.png" style="margin-bottom: -55px; width: 300px; height: 270px;" alt="Логотип">
+                        <p>Сайт-визитка</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="img/empty.png" style="margin-bottom: -55px; width: 300px; height: 270px;" alt="Логотип">
+                        <p>Корпоративный сайт</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="img/empty.png" style="margin-bottom: -55px; width: 300px; height: 270px;" alt="Логотип">
+                        <p>Интернет-магазин</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus suscipit necessitatibus et totam, distinctio quia natus excepturi, aliquid placeat, veritatis tenetur at harum. Nulla, et illo. Odit nam autem, quaerat sunt, sed minus deleniti, fuga beatae consequuntur dolore non. Ad repudiandae similique commodi eligendi itaque quis officia necessitatibus voluptatem tenetur ex atque a quos, veritatis debitis dolores vel laudantium reiciendis consequuntur minima. Explicabo ex laborum, veritatis, odio quia nostrum quibusdam quos, ipsa possimus modi totam corporis? Suscipit praesentium voluptates quis, cum sequi distinctio nam est doloribus aliquam, unde reiciendis quisquam eius repudiandae! Eveniet repellendus veritatis earum non minima deserunt quibusdam voluptates soluta! Fugit incidunt officiis consectetur asperiores autem laborum molestiae nemo commodi adipisci nisi doloribus culpa reiciendis, facere temporibus iusto dolore nam ipsam? Necessitatibus excepturi nulla perspiciatis inventore nemo neque, fuga culpa dolores repellat veniam molestiae quidem! Quasi ratione cupiditate rerum aspernatur nam, alias, expedita perferendis officia fugiat molestiae eligendi.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores officiis quo quas! Temporibus laudantium corrupti asperiores tempore? Porro quaerat consequatur molestias, fuga labore at necessitatibus beatae sapiente illo dicta optio, amet dolorum quisquam impedit voluptates? Pariatur sunt non ipsum, mollitia voluptates tempore molestias sed dolores veniam quos nemo atque et quod illo nesciunt dicta molestiae quidem. Saepe nostrum quae, consectetur necessitatibus tempora alias delectus aperiam omnis, iure libero perspiciatis error!</p>
+                </main>
+            </td>
+        </tr>
+    </table>
+    <footer>
+        <hr>
+        <p align="center">©Ключников Артём Дмитриевич 2024</p>      <!-- Copyright-информация -->
+        <a href="https://web.telegram.org/a/">      <!-- Ссылка на соцсеть в виде значка -->
+            <img src="/img/tg.png" alt="tg icon" style="width: 30px; height: 30px; float: right; margin-top: -40px">
+        </a>
+        <a href="https://vk.com/">
+            <img src="/img/vk.png" alt="vk icon" style="width: 30px; height: 30px; float: right; margin-top: -40px; margin-right: 40px">
+        </a>
+        <hr>
+    </footer>
+</body>
+</html>
