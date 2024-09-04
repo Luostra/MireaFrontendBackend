@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Веб-разработка</title>
+    <link rel="icon" href="/img/favicon-16x16.png" sizes="16x16" type="image/png"> <!-- Установка фавикона -->
+</head>
+<body>
+    <header>    <!-- Шапка страницы -->
+        <div>
+            <img src="img/logo.png" width="32" height="32" align="left" hspace="30" alt="Логотип">      <!-- Размещение логотипа в верхнем левом углу экрана с небольшим отступом вправо -->
+            <p style="text-align: right; margin-bottom: 0; line-height: 2">Группа: ЭФБО-09-23<br><!-- переход на новую строку -->Ключников Артём Дмитриевич</p>
+            <!-- здесь и дальше: параграф <p> с изменёнными параметрами margin (расстоянием вокруг элемента) -->
+            <p style="margin-left: 30px; margin-top: -20px">Logo</p>
+        </div>
+        <hr>   <!-- Горизонтальная линия -->
+        <nav style="margin-left: 30px">
+            <a href="index.html" style="margin-right: 20px;">Главная</a>
+            <a href="index2.html" style="margin-right: 20px;">Второй макет</a>
+            <a style="margin-right: 20px;">Первый семестр</a>
+            <a style="margin-right: 20px;">Второй семестр</a>
+            <a style="margin-right: 20px;">Услуги</a>
+            <a>Авторизация</a>
+        </nav>
+        <hr>
+    </header>
+    <table align="center" style="width: 100%">  <!-- Таблица, выравненная по ширине экрана. Требуется для добавления вертикальной черты на страницу  -->
+        <tr>
+            <td style="vertical-align: top; width: 10%">
+                <h5 >Навигация по странице</h5>  <!-- Загловок навигационного блока -->
+                <aside>
+                    <a href="#frontend">Фронтенд</a>     <!-- Якорная ссылка на абзац с фронтендом -->
+                    <br>
+                    <a href="#backend">Бэкенд</a>       <!-- Якорная ссылка на абзац с бэкендом -->
+                </aside>
+            </td>
+            <td style="border-right: 1px solid black; height: 100px;"></td> <!-- Вертикальная линия -->
+            <td>
+                <main>  <!-- Основное содержимое страницы -->
+                    <h2 style="margin-bottom: -30px">Добро пожаловать на мой сайт</h2>
+                    <img src="img/face.png" width="200" height="200" align="right" hspace="20" alt="Логотип">
+                    <p style="margin-top: 100px; margin-bottom: 60px">Меня зовут Ключников Артём Дмитриевич и я начинающий специалист по веб-разработке.</p>
+                    <h3>Фронтенд</h3>
+                    <p id="frontend">
+                        Фронтенд (англ. frontend) — это разработка пользовательских функций и интерфейса.
+                        К ним относится всё, что пользователи видят на сайте или в приложении, и с чем можно
+                        взаимодействовать: картинки, выпадающие списки, меню, анимация, карточки товаров, кнопки, чекбоксы,
+                        интерактивные элементы. На любой странице в интернете виден результат работы фронтенд-разработчика.
+                        Фронтенд-разработка — это практически всегда связка из HTML, CSS и JavaScript.
+                    </p>
+                    <h3>Бэкенд</h3>
+                    <p id="backend">
+                        Backend-разработка – это создание серверной части сайта. Когда пользователь осуществляет какое-нибудь действие на сайте (например, вводит данные в форму), информация об этом направляется на сервер и обрабатывается там, после чего результат в форматированном виде отправляется и демонстрируется пользователю. Визуально вы не можете увидеть Backend.
+                        Backend-разработчики в своей работе используют языки программирования такие как РНР, Java, Python и пр.
+                        Также Backend-специалисты должны уметь работать с базами данных – MySQL, PostgreSQL и др.
+                    </p>
+                </main>
+            </td>
+        </tr>
+    </table>
+    <footer>
+        <hr>
+        <p align="center">©Ключников Артём Дмитриевич 2024</p>
+        <a href="https://web.telegram.org/a/">
+            <img src="/img/tg.png" alt="tg icon" style="width: 30px; height: 30px; float: right; margin-top: -40px">
+        </a>
+        <a href="https://vk.com/">
+            <img src="/img/vk.png" alt="vk icon" style="width: 30px; height: 30px; float: right; margin-top: -40px; margin-right: 40px">
+        </a>
+        <hr>
+    </footer>
+</body>
+</html>
