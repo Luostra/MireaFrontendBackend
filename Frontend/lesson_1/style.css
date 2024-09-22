@@ -14,7 +14,7 @@
 
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* Центрируем модальное окно */
+  margin: 5% auto; /* Центрируем модальное окно */
   padding: 20px;
   border: 1px solid #888;
   width: 50%; /* Ширина модального окна */
@@ -33,8 +33,6 @@
   text-decoration: none;
   cursor: pointer;
 }
-
-
 
 
 .form-container label {
@@ -60,4 +58,139 @@
   padding: 5px; /* Поля input */
   border: 1px solid #ccc; /* Граница input */
   max-width: 60%;
+}
+
+
+.identification {
+  margin-top: -100px;
+  text-align: right;
+}
+.logo_img {
+  margin-left: 30px;
+  width: 40px;
+  height: 40px;
+}
+.logo_title {
+  margin-left: 30px;
+  margin-top: 1px;
+  margin-bottom: 40px;
+}
+
+.horizontal-nav {
+  list-style-type: none; /* Убираем маркеры списка */
+  padding: 0; /* Убираем внешние отступы */
+}
+
+.horizontal-nav li {
+  display: inline-block; /* Отображение в одну строку */
+  margin-right: 10px; /* Добавляем небольшой отступ между элементами */
+}
+
+
+
+.content {
+  margin-left: 200px; /* Учитываем ширину боковой панели */
+  padding: 20px;
+  box-sizing: border-box; /* Учитываем padding в расчете ширины блока */
+  border-left: 1px solid #000000;
+}
+
+#sidebar {
+  width: 200px;
+  height: 10vh;
+  top: 250px;
+  left: 0;
+  float: left;
+  background-color: #fff;
+  color: #000000;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar ul li {
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+}
+
+.content {
+  margin-left: 200px; /* Для учета ширины бокового меню */
+  padding: 20px;
+}
+
+#copyrightInfo {
+  text-align: center;
+}
+#copyrightLinks {
+  text-align: right;
+  margin-top: -40px;
+}
+
+
+.image-container {
+  display: flex; /* Используем flexbox для расположения в одну строку */
+}
+
+.image-block {
+  margin-right: 20px; /* Добавляем отступ между блоками (картинкой и подписью) */
+}
+
+.image-block img {
+  max-width: 100%; /* Максимальная ширина для изображения */
+}
+
+.image-block p {
+  text-align: center; /* Центрируем текст подписи */
+}
+
+.image-block button {
+  margin-left: 40%;
+}
+
+#faceImg {
+  float: right;
+  margin-top: -60px;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 70%; /* Ширина всей таблицы */
+}
+th, td {
+  border: 1px solid #6e6e6e;
+  padding: 8px;
+}
+
+th {
+  background-color: #ecc900; /* Уникальный цвет для шапки таблицы */
+  color: #000000; /* Цвет текста */
+  font-weight: bold; /* Жирный шрифт */
+  text-align: center; /* Выравнивание текста по центру */
+  padding: 10px; /* Отступы вокруг текста */
+}
+
+/* Указываем ширину для ячейки No */
+td:first-child, th:first-child {
+  width: 5%; /* Ширина ячейки No - 50px */
+}
+
+/* Указываем ширину для ячейки Тема */
+td:nth-child(2), th:nth-child(2) {
+  width: 70%;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Цвет для четных строк */
+}
+
+tr:nth-child(odd) {
+  background-color: #d9d9d9; /* Цвет для нечетных строк */
 }

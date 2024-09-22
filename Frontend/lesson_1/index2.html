@@ -8,20 +8,20 @@
 </head>
 <body>
     <header>    <!-- Шапка страницы -->
-        <div>
-            <img src="img/logo.png" width="32" height="32" alt="logo">      <!-- Размещение и масштабирование логотипа -->
-            <p>Logo</p>
-        </div>
-        <div>
+    
+        <img class="logo_img" src="img/logo.png" alt="logo">      <!-- Размещение и масштабирование логотипа -->
+        <p class="logo_title">Logo</p>
+
+        <div class="identification">
             <p>Группа: ЭФБО-09-23</p>
             <p>Ключников Артём Дмитриевич</p>
         </div>
         <hr>     <!-- Здесь и дальше: горизонтальная линия -->
-        <nav>    <!-- Перечень основных навигационных ссылок (технически работает лишь две)--> 
+        <nav class="horizontal-nav">    <!-- Перечень основных навигационных ссылок (технически работает лишь две)--> 
             <ul>
                 <li><a href="index.html">Главная</a></li>           <!-- Ссылка на главную страницу (первый макет) -->
                 <li><a href="index2.html">Второй макет</a></li>     <!-- Ссылка на текущую страницу -->
-                <li><a>Первый семестр</a></li>
+                <li><a href="index3.html">Первый семестр</a></li>
                 <li><a>Второй семестр</a></li>
                 <li><a>Услуги</a></li>
                 <li><a>Авторизация</a></li>
@@ -30,31 +30,32 @@
         <hr>
     </header>
  
-    <aside>     <!-- Боковая панель с якорными ссылками -->
+    <aside id="sidebar">     <!-- Боковая панель с якорными ссылками -->
         <h5>Навигация по странице</h5>  <!-- Загловок боковой панели -->
         <ul>
             <li><a href="index.html#frontend">Фронтенд</a></li>     <!-- Якорная ссылка на абзац с фронтендом (расположен на главной странице) -->
             <li><a href="index.html#backend">Бэкенд</a></li>       <!-- Якорная ссылка на абзац с бэкендом (расположен на главной странице) -->
         </ul>
     </aside>
-    <main>  <!-- Основное содержимое страницы -->
+    <main class="content">  <!-- Основное содержимое страницы -->
         <h2>Разработка веб-приложений</h2>
-        <div class="image-container"> 
-            <img src="img/empty.png" width="300" height="270" alt="Логотип">
-            <p>Сайт-визитка</p>
-            <button id="openModal1">Заказать</button>
-        </div>
         <div class="image-container">
-            <img src="img/empty.png" width="300" height="270" alt="Логотип">
-            <p>Корпоративный сайт</p>
-            <button id="openModal2">Заказать</button>
+            <div class="image-block"> 
+                <img src="img/empty.png" width="300" height="270" alt="Логотип">
+                <p>Сайт-визитка</p>
+                <button id="openModal1">Заказать</button>
+            </div>
+            <div class="image-block">
+                <img src="img/empty.png" width="300" height="270" alt="Логотип">
+                <p>Корпоративный сайт</p>
+                <button id="openModal2">Заказать</button>
+            </div>
+            <div class="image-block">
+                <img src="img/empty.png" width="300" height="270" alt="Логотип">
+                <p>Интернет-магазин</p>
+                <button id="openModal3">Заказать</button>
+            </div>
         </div>
-        <div class="image-container">
-            <img src="img/empty.png" width="300" height="270" alt="Логотип">
-            <p>Интернет-магазин</p>
-            <button id="openModal3">Заказать</button>
-        </div>
-
         <div id="modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -73,7 +74,7 @@
 
 
                     <label for="phone">Телефон:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="7999999999" pattern="[7-8]{1}[0-9]{10}" required> 
+                    <input type="tel" class="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX" required> 
                     <br><br>
 
                     <label for="birthdate">Дата рождения:</label>
@@ -93,7 +94,7 @@
                     <textarea id="comments" name="comments"></textarea>
                     <br><br>
 
-                    <label style="width: 100%; text-align: left;"><input type="checkbox" name="agree" required style="width: 50px;">Я согласен(-на) на обработку моих персональных данных</label>
+                    <label style="width: 100%; text-align: left;"><input type="checkbox" checked name="agree" required style="width: 50px;">Я согласен(-на) на обработку моих персональных данных</label>
                     <br><br>
     
                     <!-- Кнопка отправки формы -->
@@ -101,6 +102,8 @@
                 </form>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
         <script src="script.js"></script>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus suscipit necessitatibus et totam, distinctio quia natus excepturi, aliquid placeat, veritatis tenetur at harum. Nulla, et illo. Odit nam autem, quaerat sunt, sed minus deleniti, fuga beatae consequuntur dolore non. Ad repudiandae similique commodi eligendi itaque quis officia necessitatibus voluptatem tenetur ex atque a quos, veritatis debitis dolores vel laudantium reiciendis consequuntur minima. Explicabo ex laborum, veritatis, odio quia nostrum quibusdam quos, ipsa possimus modi totam corporis? Suscipit praesentium voluptates quis, cum sequi distinctio nam est doloribus aliquam, unde reiciendis quisquam eius repudiandae! Eveniet repellendus veritatis earum non minima deserunt quibusdam voluptates soluta! Fugit incidunt officiis consectetur asperiores autem laborum molestiae nemo commodi adipisci nisi doloribus culpa reiciendis, facere temporibus iusto dolore nam ipsam? Necessitatibus excepturi nulla perspiciatis inventore nemo neque, fuga culpa dolores repellat veniam molestiae quidem! Quasi ratione cupiditate rerum aspernatur nam, alias, expedita perferendis officia fugiat molestiae eligendi.</p>
@@ -108,13 +111,16 @@
     </main>
     <footer>
         <hr>
-        <p>©Ключников Артём Дмитриевич 2024</p>      <!-- Copyright-информация -->
-        <a href="https://web.telegram.org/a/">      <!-- Ссылка на соцсеть в виде значка -->
-            <img src="/img/tg.png" width="30" height="30" alt="tg icon">
-        </a>
-        <a href="https://vk.com/">
-            <img src="/img/vk.png" width="30" height="30" alt="vk icon">
-        </a>
+        <p id="copyrightInfo">©Ключников Артём Дмитриевич 2024</p>      <!-- Copyright-информация -->
+        <div id="copyrightLinks">
+            <a href="https://web.telegram.org/a/">      <!-- Ссылка на соцсеть в виде значка -->
+                <img src="/img/tg.png" width="30" height="30" alt="tg icon">
+            </a>
+            <a href="https://vk.com/">
+                <img src="/img/vk.png" width="30" height="30" alt="vk icon">
+            </a>
+        </div>
+        
         <hr>
     </footer>
 </body>
