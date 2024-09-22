@@ -1,196 +1,196 @@
 /* Стили для модального окна */
 .modal {
-  display: none; /* Скрываем модальное окно по умолчанию */
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0); /* Черный фон */
-  background-color: rgba(0,0,0,0.4); /* Полупрозрачный фон */
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Черный фон */
+    background-color: rgba(0,0,0,0.4); /* Полупрозрачный фон */
 }
 
 .modal-content {
-  background-color: #fefefe;
-  margin: 5% auto; /* Центрируем модальное окно */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 50%; /* Ширина модального окна */
+    background-color: #fefefe;
+    margin: 5% auto; /* Центрируем модальное окно */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Ширина модального окна */
 }
 
 .close {
-  color: #aaa; /* Цвет кнопки закрытия */
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    color: #aaa; /* Цвет кнопки закрытия */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
 .form-container label {
-  display: inline-block;
-  width: 120px; /* Фиксированная ширина label */
-  text-align: right; /* Выравнивание текста по правому краю в label */
-  padding-right: 10px; /* Отступ справа для label */
+    display: inline-block;
+    width: 120px; /* Фиксированная ширина label */
+    text-align: right; /* Выравнивание текста по правому краю в label */
+    padding-right: 10px; /* Отступ справа для label */
 }
 
 .form-container input {
-  display: inline-block;
-  width: 60%; /* Ширина input */
-  box-sizing: border-box; /* Учитываем padding и border в ширине */
-  vertical-align: top; /* Выравнивание по верхнему краю */
-  padding: 5px; /* Поля input */
-  border: 1px solid #ccc; /* Граница input */
+    display: inline-block;
+    width: 60%; /* Ширина input */
+    box-sizing: border-box; /* Учитываем padding и border в ширине */
+    vertical-align: top; /* Выравнивание по верхнему краю */
+    padding: 5px; /* Поля input */
+    border: 1px solid #ccc; /* Граница input */
 }
 .form-container textarea {
-  display: inline-block;
-  width: 50%; /* Ширина input */
-  box-sizing: border-box; /* Учитываем padding и border в ширине */
-  vertical-align: top; /* Выравнивание по верхнему краю */
-  padding: 5px; /* Поля input */
-  border: 1px solid #ccc; /* Граница input */
-  max-width: 60%;
+    display: inline-block;
+    width: 50%; /* Ширина input */
+    box-sizing: border-box; /* Учитываем padding и border в ширине */
+    vertical-align: top; /* Выравнивание по верхнему краю */
+    padding: 5px; /* Поля input */
+    border: 1px solid #ccc; /* Граница input */
+    max-width: 60%;
 }
 
 
 .identification {
-  margin-top: -100px;
-  text-align: right;
+    margin-top: -100px;
+    text-align: right;
 }
 .logo_img {
-  margin-left: 30px;
-  width: 40px;
-  height: 40px;
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
 }
 .logo_title {
-  margin-left: 30px;
-  margin-top: 1px;
-  margin-bottom: 40px;
+    margin-left: 30px;
+    margin-top: 1px;
+    margin-bottom: 40px;
 }
 
 .horizontal-nav {
-  list-style-type: none; /* Убираем маркеры списка */
-  padding: 0; /* Убираем внешние отступы */
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внешние отступы */
 }
 
 .horizontal-nav li {
-  display: inline-block; /* Отображение в одну строку */
-  margin-right: 10px; /* Добавляем небольшой отступ между элементами */
+    display: inline-block; /* Отображение в одну строку */
+    margin-right: 10px; /* Добавляем небольшой отступ между элементами */
 }
 
 
 
 .content {
-  margin-left: 200px; /* Учитываем ширину боковой панели */
-  padding: 20px;
-  box-sizing: border-box; /* Учитываем padding в расчете ширины блока */
-  border-left: 1px solid #000000;
+    margin-left: 200px; /* Учитываем ширину боковой панели */
+    padding: 20px;
+    box-sizing: border-box; /* Учитываем padding в расчете ширины блока */
+    border-left: 1px solid #000000;
 }
 
 #sidebar {
-  width: 200px;
-  height: 10vh;
-  top: 250px;
-  left: 0;
-  float: left;
-  background-color: #fff;
-  color: #000000;
+    width: 200px;
+    height: 10vh;
+    top: 250px;
+    left: 0;
+    float: left;
+    background-color: #fff;
+    color: #000000;
 }
 
 #sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 #sidebar ul li {
-  padding: 10px;
+    padding: 10px;
 }
 
 #sidebar ul li a {
-  color: #000000;
-  text-decoration: none;
-  display: block;
+    color: #000000;
+    text-decoration: none;
+    display: block;
 }
 
 .content {
-  margin-left: 200px; /* Для учета ширины бокового меню */
-  padding: 20px;
+    margin-left: 200px; /* Для учета ширины бокового меню */
+    padding: 20px;
 }
 
 #copyrightInfo {
-  text-align: center;
+    text-align: center;
 }
 #copyrightLinks {
-  text-align: right;
-  margin-top: -40px;
+    text-align: right;
+    margin-top: -40px;
 }
 
 
 .image-container {
-  display: flex; /* Используем flexbox для расположения в одну строку */
+    display: flex; /* Используем flexbox для расположения в одну строку */
 }
 
 .image-block {
-  margin-right: 20px; /* Добавляем отступ между блоками (картинкой и подписью) */
+    margin-right: 20px; /* Добавляем отступ между блоками (картинкой и подписью) */
 }
 
 .image-block img {
-  max-width: 100%; /* Максимальная ширина для изображения */
+    max-width: 100%; /* Максимальная ширина для изображения */
 }
 
 .image-block p {
-  text-align: center; /* Центрируем текст подписи */
+    text-align: center; /* Центрируем текст подписи */
 }
 
 .image-block button {
-  margin-left: 40%;
+    margin-left: 40%;
 }
 
 #faceImg {
-  float: right;
-  margin-top: -60px;
+    float: right;
+    margin-top: -60px;
 }
 
 
 table {
-  border-collapse: collapse;
-  width: 70%; /* Ширина всей таблицы */
+    border-collapse: collapse;
+    width: 70%; /* Ширина всей таблицы */
 }
 th, td {
-  border: 1px solid #6e6e6e;
-  padding: 8px;
+    border: 1px solid #6e6e6e;
+    padding: 8px;
 }
 
 th {
-  background-color: #ecc900; /* Уникальный цвет для шапки таблицы */
-  color: #000000; /* Цвет текста */
-  font-weight: bold; /* Жирный шрифт */
-  text-align: center; /* Выравнивание текста по центру */
-  padding: 10px; /* Отступы вокруг текста */
+    background-color: #ecc900; /* Уникальный цвет для шапки таблицы */
+    color: #000000; /* Цвет текста */
+    font-weight: bold; /* Жирный шрифт */
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 10px; /* Отступы вокруг текста */
 }
 
 /* Указываем ширину для ячейки No */
 td:first-child, th:first-child {
-  width: 5%; /* Ширина ячейки No - 50px */
+    width: 5%; /* Ширина ячейки No - 50px */
 }
 
 /* Указываем ширину для ячейки Тема */
 td:nth-child(2), th:nth-child(2) {
-  width: 70%;
+    width: 70%;
 }
 tr:nth-child(even) {
-  background-color: #f2f2f2; /* Цвет для четных строк */
+    background-color: #f2f2f2; /* Цвет для четных строк */
 }
 
 tr:nth-child(odd) {
-  background-color: #d9d9d9; /* Цвет для нечетных строк */
+    background-color: #d9d9d9; /* Цвет для нечетных строк */
 }
