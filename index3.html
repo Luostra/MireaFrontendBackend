@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">      <!-- Установка кодировки символов текста веб-страницы -->
     <title>Веб-разработка</title>       <!-- Заголовок страницы -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico"> <!-- Установка фавикона -->
 	<link rel="icon" type="image/x-icon" href="/img/favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="/img/favicon-32x32.png">
 </head>
 <body>
 	<header>    <!-- Шапка страницы -->
-        <img class="logo_img" src="img/logo.png" alt="logo">      <!-- Размещение и масштабирование логотипа -->
-        <p class="logo_title">Logo</p>
-        <div class="identification">
-            <p>Группа: ЭФБО-09-23</p>
-            <p>Ключников Артём Дмитриевич</p>
+        <div class="head-background">
+            <img class="logo_img" src="img/logo.png" alt="logo">      <!-- Размещение и масштабирование логотипа -->
+            <p class="logo_title">Logo</p>
+
+            <div class="identification">
+                <p>Группа: ЭФБО-09-23</p>
+                <p>Ключников Артём Дмитриевич</p>
+            </div>
         </div>
-        <hr>     <!-- Здесь и дальше: горизонтальная линия -->
         <nav class="horizontal-nav">    <!-- Перечень основных навигационных ссылок --> 
             <ul>
                 <li><a href="index.html">Главная</a></li>
@@ -27,7 +29,6 @@
                 <li><a>Авторизация</a></li>
             </ul>
         </nav>
-        <hr>
     </header>       
     <aside id="sidebar">         <!-- Боковая панель с якорными ссылками -->
         <h5 >Навигация по странице</h5>  <!-- Загловок боковой панели -->
@@ -39,7 +40,7 @@
         </ul>
     </aside>
 	<main class="content">
-		<h2>Первый семестр</h2>
+		<h1>Первый семестр</h1>
 		<h4 id="lectures">Лекции</h4>
 		<table>
 			<tr>
@@ -201,17 +202,15 @@
     	<embed src="documents/p3HTML.pdf" type="application/pdf" width="70%" height="640">
 	</main>
 	<footer>
-        <hr>
         <p id="copyrightInfo">©Ключников Артём Дмитриевич 2024</p>      <!-- Copyright-информация -->
         <div id="copyrightLinks">
             <a href="https://web.telegram.org/a/">      <!-- Ссылка на соцсеть в виде значка -->
-                <img src="/img/tg.png" width="30" height="30" alt="tg icon">
+                <img type="png" src="/img/tg.png" width="30" height="30" alt="tg icon">
             </a>
             <a href="https://vk.com/">
                 <img src="/img/vk.png" width="30" height="30" alt="vk icon">
             </a>
         </div>
-        <hr>
     </footer>
 </body>
 </html>

@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">      <!-- Установка кодировки символов текста веб-страницы -->
     <title>Веб-разработка</title>       <!-- Заголовок страницы -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico"> <!-- Установка фавикона -->
     <link rel="icon" type="image/x-icon" href="/img/favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="/img/favicon-32x32.png">
 </head>
 <body>
     <header>    <!-- Шапка страницы -->
-        <img class="logo_img" src="img/logo.png" alt="logo">      <!-- Размещение и масштабирование логотипа -->
-        <p class="logo_title">Logo</p>
-        <div class="identification">
-            <p>Группа: ЭФБО-09-23</p>
-            <p>Ключников Артём Дмитриевич</p>
+        <div class="head-background">
+            <img class="logo_img" src="img/logo.png" alt="logo">      <!-- Размещение и масштабирование логотипа -->
+            <p class="logo_title">Logo</p>
+            <div class="identification">
+                <p>Группа: ЭФБО-09-23</p>
+                <p>Ключников Артём Дмитриевич</p>
+            </div>
         </div>
-        <hr>     <!-- Здесь и дальше: горизонтальная линия -->
+        
         <nav class="horizontal-nav">    <!-- Перечень основных навигационных ссылок --> 
             <ul>
                 <li><a href="index.html">Главная</a></li>          
@@ -27,18 +29,17 @@
                 <li><a>Авторизация</a></li>
             </ul>
         </nav>
-        <hr>
     </header>       
     <aside id="sidebar">         <!-- Боковая панель с якорными ссылками -->
-        <h5 >Навигация по странице</h5>  <!-- Загловок боковой панели -->
+        <h5>Навигация по странице</h5>  <!-- Загловок боковой панели -->
         <ul>
             <li><a href="#frontend">Фронтенд</a></li>     <!-- Якорная ссылка на абзац с фронтендом -->
             <li><a href="#backend">Бэкенд</a></li>       <!-- Якорная ссылка на абзац с бэкендом -->
         </ul>
     </aside>
     <main class="content">  <!-- Основное содержимое страницы -->
-        <h2>Добро пожаловать на мой сайт</h2>
-        <img src="img/laptop.jpeg" id="laptopImg" width="333" height="222" alt="laptop">
+        <h2>Добро пожаловать на мой сайт!</h2>
+        <img src="img/myWebsite.png" id="laptopImg" width="333" height="333" alt="laptop">
         <p id="introduction">Меня зовут Ключников Артём Дмитриевич и я начинающий специалист по веб-разработке.</p>
         <h3>Фронтенд</h3>
         <p id="frontend">
@@ -64,7 +65,6 @@
         </video>
     </main>
     <footer>
-        <hr>
         <p id="copyrightInfo">©Ключников Артём Дмитриевич 2024</p>      <!-- Copyright-информация -->
         <div id="copyrightLinks">
             <a href="https://web.telegram.org/a/">      <!-- Ссылка на соцсеть в виде значка -->
@@ -74,7 +74,6 @@
                 <img src="/img/vk.png" width="30" height="30" alt="vk icon">
             </a>
         </div>
-        <hr>
     </footer>
 </body>
 </html>
