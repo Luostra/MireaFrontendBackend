@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">    <!-- Основной язык страницы -->
+<head>
+    <meta charset="UTF-8">      <!-- Установка кодировки символов текста веб-страницы -->
+    <title>Веб-разработка</title>       <!-- Заголовок страницы -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico"> <!-- Установка фавикона -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/img/favicon-32x32.png">
+</head>
+<body>
+    <header>    <!-- Шапка страницы -->
+        <div class="head-background">
+            <img class="logo_img" src="img/logo.png" alt="logo">      <!-- Размещение и масштабирование логотипа -->
+            <p class="logo_title">Logo</p>
+            <div class="identification">
+                <p>Группа: ЭФБО-09-23</p>
+                <p>Ключников Артём Дмитриевич</p>
+            </div>
+        </div>
+        <nav class="navbar">    <!-- Перечень основных навигационных ссылок --> 
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>          
+                <li><a href="index2.html">Второй макет</a></li>     
+                <li><a href="index3.html">Первый семестр</a></li>
+                <li><a>Второй семестр</a></li>
+                <li><a href="index4.html">Услуги</a></li>
+                <li><a>Авторизация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-background">
+    <div class="grid-container">
+        <div class="product-card">
+            <h3>Услуга 1</h3>
+            <img src="img/photo.png" height="100%" width="100%" alt="service 1">
+            <p>Описание</p>
+            <button class="open-modal" data-service="Услуга 1">Обратная связь</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Услуга 2</h3>
+            <img src="img/photo.png" height="100%" width="100%" alt="service 2">
+            <p>Описание</p>
+            <button class="open-modal" data-service="Услуга 2">Обратная связь</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Услуга 3</h3>
+            <img src="img/photo.png" height="100%" width="100%" alt="service 3">
+            <p>Описание</p>
+            <button class="open-modal" data-service="Услуга 3">Обратная связь</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Услуга 4</h3>
+            <img src="img/photo.png" height="100%" width="100%" alt="service 4">
+            <p>Описание</p>
+            <button class="open-modal" data-service="Услуга 4">Обратная связь</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Услуга 5</h3>
+            <img src="img/photo.png" height="100%" width="100%" alt="service 5">
+            <p>Описание</p>
+            <button class="open-modal" data-service="Услуга 5">Обратная связь</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Услуга 6</h3>
+            <img src="img/photo.png" height="100%" width="100%" alt="service 6">
+            <p>Описание</p>
+            <button class="open-modal" data-service="Услуга 6">Обратная связь</button>
+        </div>
+    </div>
+    <footer>
+        <p id="copyrightInfo">©Ключников Артём Дмитриевич 2024</p>      <!-- Copyright-информация -->
+        <div id="copyrightLinks">
+            <a href="https://web.telegram.org/a/">      <!-- Ссылка на соцсеть в виде значка -->
+                <img src="/img/tg.png" width="30" height="30" alt="tg icon">
+            </a>
+            <a href="https://vk.com/">
+                <img src="/img/vk.png" width="30" height="30" alt="vk icon">
+            </a>
+        </div>
+    </footer>
+    </main>
+</body>
+</html>
