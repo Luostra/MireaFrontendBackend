@@ -9,7 +9,7 @@ p {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1001;
     left: 0;
     top: 0;
     width: 100%;
@@ -23,7 +23,7 @@ p {
     margin: 1% auto;
     padding: 15px;
     border: 1px solid #888;
-    width: 60%;
+    width: 70%;
 }
 
 .close {
@@ -82,7 +82,7 @@ p {
 }
 
 .content {
-    margin-left: 200px;
+    margin-left: 15%;
     padding: 20px;
     box-sizing: border-box;
     border-left: 1px solid #000;
@@ -104,8 +104,9 @@ p {
 }
 
 #sidebar {
+    margin-left: -1%;
     color: #cb70ff;
-    width: 200px;
+    width: 16%;
     height: 100vh;
     float: left;
     background: url('/img/aside.jpg') center/cover;
@@ -122,12 +123,12 @@ p {
 }
 
 #sidebar h5 {
+
     margin-left: 10px;
 }
 
 #sidebar ul li a {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
     color: #fff;
     text-decoration: none;
     display: block;
@@ -151,7 +152,7 @@ p {
 }
 
 #laptopImg {
-    margin-top: -65px;
+    margin-top: -5%;
     float: right;
 }
 
@@ -195,7 +196,8 @@ tr:nth-child(odd) {
 }
 
 #introduction {
-    margin: 120px 30px;
+    margin: 8% 30px;
+    margin-right: 60%;
 }
 
 button {
@@ -247,7 +249,7 @@ footer {
     display: inline-block;
     font-family: Arial, sans-serif;
     color: #3b003d;
-  }
+}
   
 .nav-menu a {
     text-decoration: none; /* Удаление подчеркивания ссылок */
@@ -272,6 +274,11 @@ footer {
     display: flex;
     flex-direction: column;
     position: relative; /* Для абсолютного позиционирования вложенного элемента */
+    background-color: #c192f05d;
+}
+
+.product-card:hover {
+    background-color: #e6e6e6a1;
 }
 
 .product-card p {
@@ -287,3 +294,52 @@ footer {
     padding: 20px;
 }
 
+@media (orientation: portrait) {
+    #sidebar {
+        font-size: small;
+        margin-left: -2%;
+        width: 22%;
+    }
+
+    .content {
+        margin-left: 20%;
+    }
+    
+    .nav-menu li {
+        padding: 8px; /* Добавление отступов вокруг текста */
+        font-size: small;
+    }
+
+    table {
+        font-size: smaller;
+    }
+
+    th, td {
+        padding: 2px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); /* 3 колонки */
+        grid-template-rows: repeat(auto); /* 2 строки */
+    }
+    .modal-content {
+        font-size: smaller;
+        background-color: #fefefe;
+        margin: 1% auto;
+        padding: 15px;
+        border: 1px solid #888;
+        width: 90%;
+    }
+}
+
+header {
+    position: fixed;
+    margin-left: -8px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.no-header {
+    margin-top: 180px;
+}
