@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">    <!-- Основной язык страницы -->
+<head>
+    <meta charset="UTF-8">      <!-- Установка кодировки символов текста веб-страницы -->
+    <title>Веб-разработка</title>       <!-- Заголовок страницы -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico"> <!-- Установка фавикона -->
+	<link rel="icon" type="image/x-icon" href="/img/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/img/favicon-32x32.png">
+	<script src="script14.js" defer></script>
+</head>
+<body>
+	<header>    <!-- Шапка страницы -->
+        <div class="head-background">
+            <img class="logo_img" src="img/logo.png" alt="logo">      <!-- Размещение и масштабирование логотипа -->
+            <p class="logo_title">Logo</p>
+
+            <div class="identification">
+                <p>Группа: ЭФБО-09-23</p>
+                <p>Ключников Артём Дмитриевич</p>
+            </div>
+        </div>
+        <nav class="navbar">    <!-- Перечень основных навигационных ссылок --> 
+			<ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>          
+                <li><a href="index2.html">Второй макет</a></li>     
+                <li><a href="index3.html">Первый семестр</a></li>
+                <li><a href="index4.html">Услуги</a></li>
+                <li><a href="index12.html">Практика 12</a></li>
+                <li><a href="index13.html">Практика 13</a></li>
+                <li><a href="index14.html">Практика 14</a></li>
+            </ul>
+		</nav>
+    </header>       
+	<div class="no-header">
+		
+		<main>
+			<h1>Практическое занятие 14</h1>
+
+            <p>Разница между CSS и JavaScript анимацией заключается в их использовании и возможностях:</p>
+
+            <p>CSS анимация — это переход между двумя состояниями HTML-элемента, контролируемый классом CSS. Она обычно используется для простых, лёгких анимаций, таких как изменение цвета или эффекты наведения. CSS анимации обычно легче и быстрее JavaScript-анимаций, используют меньше ресурсов и могут сократить время загрузки страницы.</p>
+            <p>JavaScript анимация — это более сложная анимация, которой можно управлять с помощью кода JavaScript. Она используется для более детальных анимаций, требующих большего контроля и гибкости. 1 JavaScript анимации обычно более гибкие и способны обрабатывать замысловатые анимации, основанные на данных.</p>
+            <p>Выбор между CSS и JavaScript анимацией зависит от сложности проекта, требуемого уровня интерактивности и потребностей в производительности. Для простых и критичных по производительности анимаций чаще всего подходит CSS, а JavaScript — для сложных, интерактивных и анимаций, основанных на данных</p>        </p>
+            <img id="studentPhoto" height="120" width="160" src="/img/ja.jpg" alt="Фото студента">
+            <hr>
+            <button id="showLecturesButton">Показать лекции</button>
+
+            <table id="lectureTable" class="table-hidden">
+                <tr>
+					<th>№</th>
+					<th>Тема</th>
+					<th>Посещение</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Основы языка HTML</td>
+					<td><input type="checkbox" checked></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Углубленное изучение HTML</td>
+					<td><input type="checkbox"></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Основы работы с CSS</td>
+					<td><input type="checkbox"></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Адаптивная вёрстка Flexbox и Grid Layout</td>
+					<td><input type="checkbox"></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Bootstrap - работа с фреймворком</td>
+					<td><input type="checkbox"></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Основы языка JavaScript</td>
+					<td><input type="checkbox"></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>Работа с DOM и событиями в JavaScript</td>
+					<td><input type="checkbox"></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>Введение в GitHub и GitHub Pages</td>
+					<td><input type="checkbox"></td>
+				</tr>
+            </table>
+
+
+            
+		</main>
+	</div>
+</body>
+</html>
